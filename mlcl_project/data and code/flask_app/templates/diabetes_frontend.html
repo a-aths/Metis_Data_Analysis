@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title style="color: black;">Diabetes Screening App</title>
+    </head>
+    <body>
+        <h1 style="text-align:center;">Diabetes Screening App</h1>
+        <form name="form", method="POST", style="text-align: center;">
+            <br>
+            Age: <input type="number" name="Age", placeholder="21+" required/>
+            <br><br>
+            BMI: <input type="number"  step="0.01" name="BMI",   placeholder="28.2" required/>
+            <br><br>
+            Pregnancies: <input type="number"  step="0.01" name="Pregnancies", placeholder="No. pregnancies" required/>
+            <br><br>
+            Blood Pressure: <input type="number" step="0.01" name="BloodPressure", placeholder="diastolic BP (mm HG)" required/>
+            <br><br>
+            Glucose Levels: <input type="number"  step="0.01" name="Glucose", placeholder="(mmol/L)" required/>
+            <br><br>
+            Predisposition Function: <input type="number"  step="0.001" name="DiabetesPedigreeFunction", placeholder="0.573"/>
+            <br><br>
+            <button value="Submit">Run</button>
+        </form>
+        <p style="text-align: center;">{{ output }}</p>
+
+    </body>
+</html>
